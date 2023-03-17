@@ -5,17 +5,12 @@ pipeline{
             steps{
                git credentialsId: '5555da37-b17d-431d-9fa0-3dfae8fbb739', url: 'https://github.com/dheerendrabhandari8/OT-Microservices.git'
             }
-            // post{
-            //     always{
-            //         echo "========always========"
-            //     }
-            //     success{
-            //         echo "========A executed successfully========"
-            //     }
-            //     failure{
-            //         echo "========A execution failed========"
-            //     }
+            
             }
+stage(build){
+            steps{
+ sh 'npm install'            
+               }
         }
     }
-    
+}
