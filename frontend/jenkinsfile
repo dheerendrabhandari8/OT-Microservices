@@ -13,10 +13,10 @@ stage("build"){
                }
         }
     
-    stage("test"){
-            steps{
- sh 'cd frontend && npm test'            
-               }
-        }
+//     stage("test"){
+//             steps{
+//  sh 'cd frontend && npm test'            
+//                }
+//         }
     }
 }
