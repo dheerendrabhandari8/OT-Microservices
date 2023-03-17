@@ -15,7 +15,7 @@ stage("install"){
     
     stage("build"){
             steps{
- sh 'cd frontend && npm build'            
+ sh 'cd frontend && npm run build'            
                }
         }
     }
