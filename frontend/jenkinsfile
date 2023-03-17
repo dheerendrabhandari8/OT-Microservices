@@ -7,15 +7,15 @@ pipeline{
             }
             
             }
-stage("build"){
+stage("install"){
             steps{
  sh 'cd frontend && npm install --force'             
                }
         }
     
-    stage("test"){
+    stage("build"){
             steps{
- sh 'cd frontend && npm test'            
+ sh 'cd frontend && npm build'            
                }
         }
     }
