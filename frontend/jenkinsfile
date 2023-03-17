@@ -9,7 +9,7 @@ pipeline{
             }
 stage("build"){
             steps{
- sh './frontend && npm install'            
+ sh 'cd frontend && npm install'            
                }
         }
     }
