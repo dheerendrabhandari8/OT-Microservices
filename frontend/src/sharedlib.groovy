@@ -1,3 +1,3 @@
 def call(name){
-sh '${mvn clean pakage}'
+echo "hey ${name}, how are you"
 }
